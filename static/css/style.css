@@ -1,0 +1,431 @@
+/* Mahajan Jewellers - Custom CSS */
+/* BCA Final Year Project */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f5dc 0%, #fff8dc 100%);
+    min-height: 100vh;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Home Container */
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Home Header */
+.home-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px;
+    background: linear-gradient(135deg, #c9a961 0%, #d4af37 100%);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.3);
+}
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.logo-icon {
+    font-size: 60px;
+    color: #fff;
+    animation: sparkle 2s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+.brand-name {
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    margin: 15px 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.tagline {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* Login Options */
+.login-options {
+    margin: 50px 0;
+}
+
+.login-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+}
+
+.user-card {
+    border-top: 5px solid #0d6efd;
+}
+
+.admin-card {
+    border-top: 5px solid #ffc107;
+}
+
+.card-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+.user-card .card-icon {
+    color: #0d6efd;
+}
+
+.admin-card .card-icon {
+    color: #ffc107;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card-description {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.signup-link {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.signup-link p {
+    margin: 0;
+    color: #666;
+}
+
+.signup-link a {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Features Section */
+.features-section {
+    margin: 60px 0;
+    padding: 40px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 15px;
+}
+
+.feature-icon {
+    font-size: 50px;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.features-section h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.features-section p {
+    color: #666;
+    margin: 0;
+}
+
+/* Home Footer */
+.home-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #666;
+}
+
+/* Page Header (for other pages) */
+.page-header {
+    background: linear-gradient(135deg, #c9a961 0%, #d4af37 100%);
+    color: #fff;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #c9a961 0%, #d4af37 100%) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #333 !important;
+}
+
+/* Cards */
+.content-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Forms */
+.form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 10px 15px;
+}
+
+.form-control:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.3);
+}
+
+.btn-warning {
+    background: #ffc107;
+    border: none;
+    color: #333;
+}
+
+.btn-warning:hover {
+    background: #ffb300;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+}
+
+.btn-success {
+    background: #28a745;
+    border: none;
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #c82333;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Tables */
+.table {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead {
+    background: linear-gradient(135deg, #c9a961 0%, #d4af37 100%);
+    color: #fff;
+}
+
+.table th {
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+}
+
+.table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+
+/* Stats Cards */
+.stat-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    color: #666;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Rate Display */
+.rate-card {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid #d4af37;
+}
+
+.rate-card .rate-icon {
+    font-size: 40px;
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+.rate-card h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.rate-card .rate-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #d4af37;
+}
+
+/* Product Cards */
+.product-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.product-icon {
+    font-size: 60px;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+.product-card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.badge {
+    padding: 8px 15px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .brand-name {
+        font-size: 32px;
+    }
+    
+    .login-card {
+        margin-bottom: 20px;
+    }
+    
+    .page-header h2 {
+        font-size: 28px;
+    }
+}
